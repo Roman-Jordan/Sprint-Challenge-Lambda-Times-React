@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 const Tab = props => {
       let className = '';
-      props.current === props.tab ? className += 'active':false;
+      className = props.current === props.tab ? className += 'active':false;
   return (
     <div
       id={props.tab}
