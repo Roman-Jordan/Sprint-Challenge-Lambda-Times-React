@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Card from './Card';
+import PropTypes from 'prop-types';
 
 export default function Cards (props){
-  
 
-  
     return (
       <div className="cards-container">
         {props.cards.map((card, i)=>
@@ -15,4 +14,14 @@ export default function Cards (props){
   
 }
 
-// Make sure you include prop types for all of your incoming props
+Cards.propTypes = {
+  cards: PropTypes.arrayOf(
+      PropTypes.shape({
+          tab: PropTypes.string.isRequired,
+          headline: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired,
+          author: PropTypes.string.isRequired,
+      })
+  )
+}
+

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 const Tab = props => {
       let className = '';
       props.current === props.tab ? className += 'active':false;
@@ -13,6 +13,12 @@ const Tab = props => {
     </div>
   );
 };
+
+Tab.propTypes = {
+  tab: PropTypes.string.isRequired,
+  current:PropTypes.string.isRequired,
+  tabSelected:PropTypes.func.isRequired
+}
 
 // Make sure you include PropTypes on your props.
 
