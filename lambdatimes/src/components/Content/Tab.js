@@ -6,7 +6,7 @@ const Tab = props => {
   return (
     <div
       id={props.tab}
-      className={className}
+      className={`tab ${className}`}
       onClick={props.tabSelected}
     >
       {props.tab.toUpperCase()}

@@ -55,7 +55,11 @@ export const DivTopBar = styled.div`
     height: 44px;
     background-color: #333;
 
-   .container {
+    @media (min-width: 1280px) {
+        width: 1280px;
+    }
+
+    div{
     width: 100%;
     display: flex;
     justify-content: none;
@@ -64,44 +68,55 @@ export const DivTopBar = styled.div`
     color: #fff;
     letter-spacing: 1px;
     padding: 0 10px;
+    
+    
     }
-    @media (min-width: 1280px) {
-        .container {
-        width: 1280px;
-        }
-    }
-   .container .container-left {
+`;
+
+export const DivTopBarLeft = styled.div`
+
     display: flex;
     justify-content: none;
     align-items: center;
     flex-direction: row;
     flex: 1;
     font-size: 11px;
-  }
-   .container .container-left span {
-    cursor: pointer;
-    margin-right: 25%;
-    font-weight: bold;
-  }
-   .container .container-center {
+
+    span {
+        cursor: pointer;
+        margin-right: 25%;
+        font-weight: bold;
+    }
+
+`;
+
+export const DivTopBarCenter = styled.div`
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex: 3;
     font-size: 9px;
-  }
-   .container .container-center span {
-    cursor: pointer;
-    margin-right: 5%;
-  }
-   .container .container-center span:last-child {
-    margin-right: 0;
-  }
-   .container .container-center span:hover {
-    text-decoration: underline;
-  }
-   .container .container-right {
+
+    span {
+        cursor: pointer;
+        margin-right: 5%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    
+    
+    span:hover {
+        text-decoration: underline;
+    }
+`;
+
+export const DivTopBarRight = styled.div`
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -109,8 +124,10 @@ export const DivTopBar = styled.div`
     flex: 1;
     font-size: 11px;
     font-weight: bold;
-  }
-   .container .container-right span {
-    cursor: pointer;
-  }
+    
+    span {
+        cursor: pointer;
+    }
+
+
 `;
