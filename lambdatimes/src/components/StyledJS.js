@@ -26,21 +26,19 @@ export const DivHeader = styled.div`
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 1px;
+
+    &:first-child{
+        margin-left: 25px;
+         flex: 1;
+    }
+
+    &:last-child{
+        text-align: right;
+        margin-right: 25px;
+        flex: 1;
+    }
   }
-  .date {
-    margin-left: 25px;
-    flex: 1;
-  }
-  .temp {
-    text-align: right;
-    margin-right: 25px;
-    flex: 1;
-  }
-  .content-container {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-  }
+  
 `;
 
 export const DivTopBar = styled.div`

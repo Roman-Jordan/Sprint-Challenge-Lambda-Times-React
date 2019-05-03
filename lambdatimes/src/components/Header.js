@@ -6,10 +6,10 @@ import { DivHeader } from './StyledJS'
 
 const Header = () => {
   return (
-    <DivHeader className="header">
-      <span className="date">SMARCH 32, 2018</span>
+    <DivHeader>
+      <span >SMARCH 32, 2018</span>
       <h1>Lambda Times</h1>
-      <span className="temp">98°</span>
+      <span>98°</span>
     </DivHeader>
   )
 }
